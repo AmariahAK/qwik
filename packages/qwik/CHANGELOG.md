@@ -1,5 +1,35 @@
 # @qwik.dev/core
 
+## 2.0.0-beta.38
+
+### Minor Changes
+
+- ✨ improve client resume responsiveness by splitting startup DOM processing into smaller tasks (by [@Varixo](https://github.com/Varixo) in [#8575](https://github.com/QwikDev/qwik/pull/8575))
+
+- ✨ improve client resume responsiveness by splitting state processing into smaller tasks (by [@Varixo](https://github.com/Varixo) in [#8579](https://github.com/QwikDev/qwik/pull/8579))
+
+- ✨ Add experimental `Show` control-flow component with `when$`, `then$`, and optional `else$` branches. (by [@Varixo](https://github.com/Varixo) in [#8624](https://github.com/QwikDev/qwik/pull/8624))
+
+### Patch Changes
+
+- 🐞🩹 the built-in dev-time eslint linter now targets es2022 (by [@maiieul](https://github.com/maiieul) in [#8810](https://github.com/QwikDev/qwik/pull/8810))
+
+- 🐞🩹 duplicate projected element children when a component throws a promise on first render (by [@maiieul](https://github.com/maiieul) in [#8715](https://github.com/QwikDev/qwik/pull/8715))
+
+- 🐞🩹 resume multiple SSR containers on the same page (by [@maiieul](https://github.com/maiieul) in [#8799](https://github.com/QwikDev/qwik/pull/8799))
+
+- 🐞🩹 resuming component props when statePrewarm option is enabled (by [@Varixo](https://github.com/Varixo) in [#8784](https://github.com/QwikDev/qwik/pull/8784))
+
+- 🐞🩹 ssg build no longer overwrites the deployed server entry with a broken re-export (by [@wmertens](https://github.com/wmertens) in [#8806](https://github.com/QwikDev/qwik/pull/8806))
+
+- 🐞🩹 reduce component rerender when props are the same (by [@Varixo](https://github.com/Varixo) in [#8735](https://github.com/QwikDev/qwik/pull/8735))
+
+- 🐞🩹 surface a failed container resume — report it and unblock `whenContainerDataReady` waiters — instead of swallowing the error into a silent hang. (by [@maiieul](https://github.com/maiieul) in [#8772](https://github.com/QwikDev/qwik/pull/8772))
+
+- 🐞🩹 surface a failed vnode-data resume — report it and unblock the `whenVNodeDataReady` waiters — instead of swallowing the error into a silent hang. (by [@maiieul](https://github.com/maiieul) in [#8773](https://github.com/QwikDev/qwik/pull/8773))
+
+- 🐞🩹 prevent large updates that span multiple frames from restarting incorrectly and missing pending UI changes (by [@Varixo](https://github.com/Varixo) in [#8743](https://github.com/QwikDev/qwik/pull/8743))
+
 ## 2.0.0-beta.37
 
 ### Minor Changes
